@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({selector:'textarea'});</script> -->
+    <!-- <link rel="stylesheet" href="widgEditor/css/widgEditor.css" />
+
+<script src="widgEditor/scripts/widgEditor.js"></script> -->
+
+
+    <title>CV Maker</title>
+    <style>
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            background-color: rgb(228, 252, 252);
+            /* border: 1px solid red; */
+            width: 78%;
+            margin: 10rem 10rem;
+            /* margin: auto; */
+            padding: 5rem;
+            /* display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row; */
+
+        }
+        /* .container label{
+            padding: 5rem;
+        } */
+        .sec-con{
+            
+            margin-top: 5rem;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            
+        }
+        #emaili{
+            padding-left: 35px;
+        }
+        #ph{
+            padding-left: 35px;
+        }
+        #exp{
+            padding-left: 35px;
+        }
+        #link{
+            padding-left: 35px;
+        }
+        .third-con{
+            margin-top: 5rem;
+        }
+        #project{
+            padding-left: 35px;
+        }
+        #skill{
+            padding-left: 35px;
+        }
+        .fourth-con{
+            margin-top: 5rem;
+        }
+        #achievement{
+            padding-left: 35px;
+        }
+        #por{
+            padding-left: 35px;
+        }
+        .first-con{
+            padding-left: 250px;
+            
+        }
+        #submit{
+            margin: 5rem 40rem;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Make Your Own CV In Some Simple Steps</h1>
+<form action="pdf.php" method="post">
+    <div class="container" id = editor>
+        <div class="first-con">
+            <label for="name">Name</label>
+        
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+        <label for="email" id="emaili">Email</label>
+            <input type="text" name="email" id="email" placeholder="name@gmail.com">
+        <label for="ph-no" id="ph">Ph.NO</label>
+            <input type="text" name="ph_no" id="ph-no" placeholder="Enter your ph.no">
+        <br>
+
+        </div>
+        
+        <div class="sec-con">
+        <label for="education">Education</label>
+            <!-- <input type="text" name="education" id="education"> -->
+            <textarea name="education" id="education" cols="40" rows="10" placeholder="School, colleges...."></textarea>
+            
+        <!-- <label for="education-sc" id="edu-sc">Education(School)</label>
+            <input type="text" name="education-school" id=" education-sc"> -->
+        <label for="experience" id="exp">Experience</label>
+        <textarea name="experience" id="experience" cols="40" rows="10"placeholder="Experiences.."></textarea>
+        <!-- <input type="text" name="name" id="name"> -->
+        <label for="links" id="link">Links</label>
+        <!-- <input type="text" name="name" id="name"> -->
+        <textarea name="links" id="links" cols="40" rows="10" placeholder="Profile links"></textarea>
+
+        <div class="third-con">
+            <label for="course" id="course">Coursework</label>
+        <!-- <input type="text" name="name" id="name"> -->
+        <textarea name="course" id="course" cols="40" rows="10" placeholder="UG,PG subs.."></textarea>
+        <label for="Projects" id="project">Projects</label>
+        <!-- <input type="text" name="name" id="name"> -->
+        <textarea name="Projects" id="Projects" cols="40" rows="10" placeholder="Projects..."></textarea>
+        <label for="skills" id="skill">Skills</label>
+        <textarea name="skills" id="skills" cols="40" rows="10" placeholder="Skills you have..."></textarea>
+
+        </div>
+        <div class="fourth-con">
+        <label for="Publications" id="Publications">Publications</label>
+            <textarea name="Publications" id="Publications" cols="40" rows="10" placeholder="Publications..."></textarea>
+        <label for="Achievements" id="achievement">Achievements</label>
+            <textarea name="Achievements" id="Achievements" cols="40" rows="10" placeholder="Achievements..."></textarea>
+        <label for="po-re" id="por">Position of Responsibility</label>
+            <textarea name="po-re" id="po-re" cols="30" rows="10" placeholder="Positions you have experienced..."></textarea>
+
+        </div>
+        <button id ="submit" type="submit">Submit</button>
+        
+
+        
+
+        </div>
+        
+
+    </div>
+    <!-- <script src="ckeditor/ckeditor.js"></script>
+<script>
+    ClassicEditor
+    .create(document.querySelector('#editor'))
+    .catch(error => {
+    console.error(error)
+    }); -->
+    
+</script>
+</form>
+
+    
+</body>
+</html>
